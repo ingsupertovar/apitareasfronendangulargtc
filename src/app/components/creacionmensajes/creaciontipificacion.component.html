@@ -1,0 +1,36 @@
+<div class="card">
+  
+ 
+  <form action="">
+    
+    <label>Fecha De Creación</label>
+      <input type="text" name="createdAt" [(ngModel)]="mensaje.createdAt" placeholder="Escriba Su Fecha de edición" class="form-control" autofocus>
+  
+      <label>Estado</label>
+      <textarea name="state" [(ngModel)]="mensaje.state" rows="2" placeholder="Estado" class="form-control"></textarea>
+    
+
+      <label>Titulo Tarea</label>
+      <input type="url" name="title" [(ngModel)]="mensaje.title" placeholder="Titulo Tarea" class="form-control">
+    
+
+      
+
+    <button class="btn btn-success btn-block" (click)="CrearEstudiante()">
+      GUARDAR TAREA
+    </button>
+    <BR>
+      <BR>
+    <button
+    type="submit"
+    class="btn btn-success btn-block"
+    (click)="update()"
+  >
+    EDITAR TAREA
+  </button>
+
+  </form>
+</div>
+
+
+  
